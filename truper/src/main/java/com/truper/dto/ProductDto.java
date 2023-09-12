@@ -1,7 +1,5 @@
 package com.truper.dto;
 
-import com.truper.model.OrderEntity;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -15,8 +13,10 @@ import lombok.Setter;
 @Setter
 public class ProductDto {
 
-	private OrderEntity order;
+	private Long id;
+	private OrderDto order;
 	private String code;
-	private Double description;
+	private String description;
 	private Double price;
+	
 }

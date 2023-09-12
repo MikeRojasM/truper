@@ -2,8 +2,6 @@ package com.truper.dto;
 
 import java.time.LocalDate;
 
-import com.truper.model.StoreEntity;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -17,7 +15,8 @@ import lombok.Setter;
 @Setter
 public class OrderDto {
 	
-	private StoreEntity store;
+	private Long id;
+	private StoreDto store;
 	private LocalDate date;
 	private Double total;
 }
